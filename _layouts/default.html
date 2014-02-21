@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- 关键词 -->
+        {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords | join: ','}}" />
+        {% endif %}
+
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <link rel='stylesheet' href="/css/font.css">
+        <link rel="stylesheet" href="/css/syntax-molokai.css">
+        <link rel="stylesheet" href="/css/zcodes.css">
+    </head>
+    <body>
+        <div class="site">
+            <div id="nav" class="navbar navbar-pills">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">zcodes.net</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav">
+                        {% for cate in site.categories %}
+                        <li><a href="/categories/{{ cate | first }}.html">
+                            {{ cate | first }}
+                        </a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div id="content" class="container">
+                {{ content }}
+            </div>
+
+            <div class="footer">
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/zcodes.js"></script>
+    </body>
+</html>

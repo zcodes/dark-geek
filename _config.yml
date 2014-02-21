@@ -1,0 +1,6 @@
+name: dark-geek-theme
+markdown: redcarpet
+pygments: true
+permalink: /:categories/:year/:month/:day/:title
+timezone: Asia/Shanghai
+pygments: true

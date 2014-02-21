@@ -1,0 +1,145 @@
+/*****************************************************************************/
+/*
+  /* Common
+  /*
+  /*****************************************************************************/
+
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body { height: 100%; }
+
+body {
+    color: #66D9EF;
+    background-color: #111;
+    font: 13.34px Exo, Helvetica, Arial, "WenQuanYi Micro Hei Mono", "微软雅黑", sans-serif;
+    font-size: small;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+li { list-style: none;}
+hr {
+    margin: 25px 0;
+    border-top: 1px dashed #49483e;
+}
+
+a         { color: #66D9Ef; background: #111; text-decoration: none; outline: none !important; }
+a:hover   { color: #66D9EF; background: #111; text-decoration: none; font-weight: bold;}
+
+/*
+ * 导航
+ */
+
+#nav, #nav a {
+    color: #eee;
+    background: url(../img/bg.gif);
+}
+
+.icon-bar {
+    background: #66D9EF;
+}
+
+/*
+ * post list
+ */
+
+#content {
+    margin: 5px;
+    padding: 0px;
+}
+
+#posts-title {
+    font-size: 22px;
+}
+
+.post-item {
+    padding: 10px 0px;
+    height: 40px;
+}
+
+.post-title {
+    margin: 30px auto;
+}
+
+.post-title h2 {
+    font-size: 20px;
+}
+
+.post-title p {
+    font-size: 16px;
+}
+
+/*
+ * pre and code
+ */
+
+.post pre {
+    border: 1px solid #49483e;;
+}
+.post pre, .post code {
+    font-size: 14px;
+    background: #111;
+}
+
+.post code {
+    font-family: "Ubuntu Mono", Consolas, Monaco, mono;
+}
+
+.post li {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+.post p a {
+    color: #29e;
+}
+
+.post h4 {
+    text-decoration: underline;
+}
+/*
+ * duoshuo
+ */
+.ds-thread {
+    margin-top: 60px;
+}
+
+
+/* goto-top */
+#back-top {
+    display: none;
+    height: 54px;
+    width: 54px;
+    position: fixed;
+    left: 60%;
+    bottom: 30%;
+    z-index: 1 !important;
+}
+
+#back-top img {
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    opacity: .3;
+
+}
+#back-top img:hover {
+     box-shadow: 0 0 10px #111 rgba(1,1,1,.6), inset 0 0 20px rgba(1,1,1,1);
+    -webkit-box-shadow: 0 0 10px #111 rgba(1,1,1,.6), inset 0 0 20px rgba(1,1,1,1);
+    /* transform: rotateZ(360deg); */
+    /* -webkit-transform: rotateZ(360deg); */
+    /* -moz-transform: rotateZ(360deg); */
+    opacity: .8;
+}
